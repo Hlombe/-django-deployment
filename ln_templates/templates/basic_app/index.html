@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body_block %}
+    <h4>WELCOME TO INDEX</h4>
+    <h5>This is index.html page showing</h5>
+    <h4>{{text|cut:'Post'}}</h4>
+    <h4>{{number|add:56}}</h4>
+    {% endblock %}
+</body>
+</html>
